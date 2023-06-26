@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "podcast-transcript"
+version = "0.1"
+description = "PoC to create a podcast transcript"
+authors = [
+    "Jan Philipp Harries <jan@jph.me>",
+]
+license = "MIT"
+readme = "README.md"
+
+homepage = "https://jph.me"
+
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python :: 3.10",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Typing :: Typed",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10, <4.0"
+openai = "^0.27.2"
+langchain = ">=0.0.215"
+tiktoken = "^0.3.3"
+ipykernel = "^6.22.0"
+python-dotenv = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
